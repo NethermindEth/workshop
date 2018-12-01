@@ -32,9 +32,9 @@ Preparation
     cd src/Nethermind/Nethermind.Runner
     dotnet run -- --config goerli
     
-5. Launch Nethermind with spaceneth testnet config
+5. Launch Nethermind with spaceneth testnet config. Spaceneth is your private, local network that will have no blocks at the beginning.
 
 ::
  
     cd src/Nethermind/Nethermind.Runner
-    dotnet run -- --config goerli
+    dotnet run -- --config spaceneth
