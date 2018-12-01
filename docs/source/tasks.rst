@@ -89,4 +89,4 @@ Preparation
 18. Check what do the opcodes between 0x40 and 0x45 do and experiment with them in EvmPlayground
  * write bytecode that will run a loop that will use the entire block gas limit if the block number is even and will do nothing if the block is odd
  
-19!. Write bytecode that will cause a testnet split on Goerli network (encouraged by the Goerli testnet team). Find differences in new bytecode implementations of Constantinople (or earlier) between different Ethereum clients. Do not forget to inform the core devs about your findings! (you will need to be able to send a transaction through your running node - expect some more details to appear here soon).
+19. (!!!) Write bytecode that will cause a testnet split on Goerli network (encouraged by the Goerli testnet team). Find differences in new bytecode implementations of Constantinople (or earlier) between different Ethereum clients. Do not forget to inform the core devs about your findings! (you will need to be able to send a transaction through your running node - expect some more details to appear here soon).
