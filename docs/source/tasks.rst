@@ -40,3 +40,5 @@ Preparation
     dotnet run -- --config spaceneth
     
 6. Visit `ethstats <https://ethstats.net/>`_ and analyze the network parameters and nodes. Ask questions about the meaning of anything that is not clear.
+
+7. Download `beige paper <https://github.com/chronaeon/beigepaper/blob/master/beigepaper.pdf>`_ and analyze available EVM opcodes in Appendix A.
