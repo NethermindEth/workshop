@@ -71,7 +71,7 @@ Preparation
 12. Analyze RETURN opcodes and write bytecode that will:
  * return 42
  
-12. (b) Load code that was deployed in '12)' into memory from a seaparate transaction. The code address is shown in the 'contractAddress' field of the '12)' transaction trace in EvmPlayground. Use EXTCODELOAD, EXTCODESIZE.
+12. (b) Load code that was deployed in '12)' into memory from a separate transaction. The code address is shown in the 'contractAddress' field of the '12)' transaction trace in EvmPlayground. Use EXTCODECOPY, EXTCODESIZE.
 
 13. Analyze opcodes SSTORE, SLOAD and write bytecode that will:
  * permanently store information that address 0x00010203040506070809000a0b0c0d0e0f00010203 has 1 Ether
