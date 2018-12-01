@@ -48,3 +48,33 @@ Preparation
     cd src/Nethermind/Nethermind.EvmPlayground
     dotnet run --no-build
     
+8. Write a simple code in EvmPlayground that will execute '2 + 2'
+
+::
+
+     0x60 2 0x60 2 0x01 0x00
+     
+9. Now write different bytecodes that will:
+ * cause StackUnderflowException
+ * cause BadInstructionException
+
+10. Analyze opcodes JUMP, JUMPI, JUMPDEST and write bytecode that will:
+ * cause StackOverflowException
+
+11. Analyze MSTORE, MLOAD operations and write bytecode that will:
+ * store 0x2a in memory
+
+12. Analyze RETURN opcodes and write bytecode that will:
+ * return 42
+
+13. Analyze opcodes SSTORE, SLOAD and write bytecode that will:
+ * permanently store information that address 0x00010203040506070809000a0b0c0d0e0f00010203 has 1 Ether
+ 
+14. Each EvmPlayground call is in fact sending an Init type transaction to spaceneth which in turn deploys a contract with bytecode equal to the EvmPlayground call return value (like the one in '12)'). Write bytecode that will deploy code from '8)' 
+ 
+15. Analyze CALL, CALLCODE (deprecated), DELEGATECALL, STATICCALL and write bytecodes that will
+ * call the contract deployed in '14)' (you will need to check address where the contract was deployed)
+ * cause StaticCallViolationException
+ 
+16. Analyze CALLDATALOAD opcode and write code that will
+ * improve the code deployed in '14)' to alow the calculator to add any two 256-bit numbers
