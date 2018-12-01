@@ -18,7 +18,7 @@ Preparation
     cd src/Nethermind
     dotnet build -c Release
 
-3. Launch Nethermind with goerli testnet config and wait until it synchronizes fully. You can check the latest block on Goerli testnet in `Goerli explorer <https://blockscout.com/eth/goerli/>_` or at `Goerli ethstats <https://stats.goerli.net/>_`. After Nethermind synchronizes entire Goerli network press 'e' to close Nethermind.
+3. Launch Nethermind with goerli testnet config and wait until it synchronizes fully. You can check the latest block on Goerli testnet in `Goerli explorer <https://blockscout.com/eth/goerli/>`_ or at `Goerli ethstats <https://stats.goerli.net/>`_. After Nethermind synchronizes entire Goerli network press 'e' to close Nethermind.
 
 ::
  
