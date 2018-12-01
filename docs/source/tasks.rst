@@ -38,3 +38,5 @@ Preparation
  
     cd src/Nethermind/Nethermind.Runner
     dotnet run -- --config spaceneth
+    
+6. Visit `ethstats <https://ethstats.net/>`_ and analyze the network parameters and nodes. Ask questions about the meaning of anything that is not clear.
