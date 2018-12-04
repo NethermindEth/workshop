@@ -34,7 +34,7 @@ Preparation
     
 5. Visit `ethstats <https://ethstats.net/>`_ and analyze the network parameters and nodes. Ask questions about the meaning of anything that is not clear.
 
-6. Download `beige paper <https://github.com/chronaeon/beigepaper/blob/master/beigepaper.pdf>`_ and analyze available EVM opcodes in Appendix A.
+6. Download `beige paper <https://github.com/chronaeon/beigepaper/blob/master/beigepaper.pdf>`_ and analyze available EVM opcodes in Appendix A. Use `Ether VM <https://ethervm.io/#MSTORE>`_ for reference when using the stack.
 
 7. Launch Nethermind spaceneth again and leave it open in a separate window - leave it running for the time of the workshop. Next run a tool that we are going to use to analyze the EVM behaviour (it accepts bytecode and returns Geth-like trace of the transaction)
 
