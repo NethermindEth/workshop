@@ -10,6 +10,7 @@ IDE
 SDKs
 ^^^^
 
+You will need .NET SDK 2.1 or later
 * Windows https://www.microsoft.com/net/download?initial-os=windows
 * Linux https://www.microsoft.com/net/download?initial-os=linux (make sure to select the right distribution)
 * Mac https://www.microsoft.com/net/download?initial-os=macos
