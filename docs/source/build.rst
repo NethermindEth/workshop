@@ -86,3 +86,6 @@ You can also launch and sync Goerli testnet (after closing previous screens):
 
     cd Nethermind.Runner
     dotnet run --no-build -c Release -- --config goerli
+    
+You can confirm the latest block of the Goerli tetsnet here:
+https://blockscout.com/eth/goerli/
