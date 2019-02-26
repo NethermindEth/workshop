@@ -77,3 +77,12 @@ The screen should return a transaction receipt and the last trace entry should s
       "Storage": {},
       "SortedStorage": {}
     }
+
+After this works you are ready for the workshop.
+
+You can also launch and sync Goerli testnet (after closing previous screens):
+
+::
+
+    cd Nethermind.Runner
+    dotnet run --no-build -c Release -- --config goerli
