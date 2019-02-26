@@ -21,11 +21,6 @@ Linux
 ::
 
     sudo apt-get update && sudo apt-get install libsnappy-dev libc6-dev libc6
-    git clone https://github.com/tkstanczak/nethermind --recursive
-    cd nethermind/src/Nethermind
-    dotnet build Nethermind.sln -c Release
-    cd Nethermind.Runner
-    dotnet run
 
 MacOS
 ^^^^^
@@ -34,21 +29,29 @@ MacOS
 
     brew install gmp
     brew install snappy
-    git clone https://github.com/tkstanczak/nethermind --recursive
-    cd nethermind/src/Nethermind
-    dotnet build Nethermind.sln -c Release
-    cd Nethermind.Runner
-    dotnet run
     
 Windows
 ^^^^^^^
 
 you may need to install https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads
 
+All Platforms
+^^^^^^^^^^^^^
+
 ::
 
-    git clone https://github.com/tkstanczak/nethermind --recursive
-    cd nethermind/src/Nethermind
+    git clone https://github.com/tkstanczak/nethermind nethworkshop --recursive -b workshop
+    cd nethworkshop/src/Nethermind
     dotnet build Nethermind.sln -c Release
+    
+Then launch two terminals and from the nethworkshop/src/Nethermind directory:
+
+::
+
     cd Nethermind.Runner
-    dotnet run
+    dotnet run -c Release
+    
+::
+
+    cd Nethermind.EvmPlayground
+    dotnet run -c Release
