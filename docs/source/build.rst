@@ -10,7 +10,7 @@ IDE
 SDKs
 ^^^^
 
-You will need .NET SDK 2.1 or later
+You will need .NET SDK 2.2
 * Windows https://www.microsoft.com/net/download?initial-os=windows
 * Linux https://www.microsoft.com/net/download?initial-os=linux (make sure to select the right distribution)
 * Mac https://www.microsoft.com/net/download?initial-os=macos
@@ -23,7 +23,7 @@ Linux
     sudo apt-get update && sudo apt-get install libsnappy-dev libc6-dev libc6
     git clone https://github.com/tkstanczak/nethermind --recursive
     cd nethermind/src/Nethermind
-    dotnet build -c Release
+    dotnet build Nethermind.sln -c Release
     cd Nethermind.Runner
     dotnet run
 
@@ -36,7 +36,7 @@ MacOS
     brew install snappy
     git clone https://github.com/tkstanczak/nethermind --recursive
     cd nethermind/src/Nethermind
-    dotnet build -c Release
+    dotnet build Nethermind.sln -c Release
     cd Nethermind.Runner
     dotnet run
     
@@ -49,6 +49,6 @@ you may need to install https://support.microsoft.com/en-us/help/2977003/the-lat
 
     git clone https://github.com/tkstanczak/nethermind --recursive
     cd nethermind/src/Nethermind
-    dotnet build -c Release
+    dotnet build Nethermind.sln -c Release
     cd Nethermind.Runner
     dotnet run
