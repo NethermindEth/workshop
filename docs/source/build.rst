@@ -89,3 +89,23 @@ You can also launch and sync Goerli testnet (after closing previous screens):
     
 You can confirm the latest block of the Goerli tetsnet here:
 https://blockscout.com/eth/goerli/
+
+Potential Issues
+^^^^^^^^^^^^^^^^
+
+If you have some previous pre-release versions of .NET Core installed they may cause conflicts. Your case might be quite unique so best to search for help online.
+
+If application crashes saying that rocksdb-sharp / rocksdb is failing then most likely your processor is not supporting AVX instructions.
+
+Go to the EthereumRunner.cs file and replace:
+
+::
+
+_dbProvider = HiveEnabled ? (IDbProvider) new MemDbProvider() : new RocksDbProvider(_initConfig.BaseDbPath, dbConfig, _logManager, _initConfig.StoreTraces, _initConfig.StoreReceipts);
+                
+                
+with
+
+::
+
+_dbProvider = new MemDbProvider();
