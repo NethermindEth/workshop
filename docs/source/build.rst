@@ -95,9 +95,7 @@ Potential Issues
 
 If you have some previous pre-release versions of .NET Core installed they may cause conflicts. Your case might be quite unique so best to search for help online.
 
-If application crashes saying that rocksdb-sharp / rocksdb is failing then most likely your processor is not supporting AVX instructions.
-
-Go to the EthereumRunner.cs file and replace:
+If application crashes saying that rocksdb-sharp / rocksdb is failing then most likely your processor is not supporting AVX instructions. Go to the EthereumRunner.cs file and replace:
 
 ::
 
