@@ -50,6 +50,7 @@ Then launch two terminals and from the nethworkshop/src/Nethermind directory:
 
     cd Nethermind.Runner
     dotnet run --no-build -c Release -- --config spaceneth
+
     
 ::
 
@@ -57,12 +58,11 @@ Then launch two terminals and from the nethworkshop/src/Nethermind directory:
     dotnet run --no-build -c Release
  
  
- Then in the EvmPlayground window write 96 01 96 02 01 00 and press ENTER (make sure that the runner is running fine)
+Then in the EvmPlayground window write 96 01 96 02 01 00 and press ENTER (make sure that the runner is running fine)
+
+The screen should return a transaction receipt and the last trace entry should say:
  
- 
- The screen should return a transaction receipt and the last trace entry should say:
- 
- ::
+::
  
      {
       "Pc": 5,
