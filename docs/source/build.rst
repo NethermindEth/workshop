@@ -120,4 +120,4 @@ Debug / Release
 It may happen that something goes wrong and you end up with a message like:
 The application to execute does not exist: '/nethermind/src/Nethermind/Nethermind.Runner/bin/Debug/netcoreapp2.2/Nethermind.Runner.dll'
 
-It is worth to note that .NET Core has to types of outputs - Debug and Release. Release builds are prepared with the -c Release switch. Make sure that you both build and run with -c Release.
+It is worth to note that .NET Core has two types of outputs - Debug and Release. Release builds are prepared with the -c Release switch. Make sure that you both build and run with -c Release.
