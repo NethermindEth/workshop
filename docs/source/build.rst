@@ -2,13 +2,13 @@ Build
 *****
 
 IDE
-^^^
+++++++++++++++++
 
 * JetBrains Rider https://www.jetbrains.com/rider/
 * VS Code https://code.visualstudio.com/docs/other/dotnet
 
 SDKs
-^^^^
+++++
 
 You will need .NET SDK 2.2
  * Windows https://www.microsoft.com/net/download?initial-os=windows
@@ -16,14 +16,14 @@ You will need .NET SDK 2.2
  * Mac https://www.microsoft.com/net/download?initial-os=macos
 
 Linux
-^^^^^
++++++
 
 ::
 
     sudo apt-get update && sudo apt-get install libsnappy-dev libc6-dev libc6
 
 MacOS
-^^^^^
++++++
 
 ::
 
@@ -31,12 +31,12 @@ MacOS
     brew install snappy
     
 Windows
-^^^^^^^
++++++++
 
 you may need to install https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads
 
 All Platforms
-^^^^^^^^^^^^^
++++++++++++++
 
 ::
 
@@ -91,9 +91,15 @@ You can confirm the latest block of the Goerli tetsnet here:
 https://blockscout.com/eth/goerli/
 
 Potential Issues
-^^^^^^^^^^^^^^^^
+++++++++++++++++
+
+.NET Core versions
+^^^^^^^^^^^^^^^^^^
 
 If you have some previous pre-release versions of .NET Core installed they may cause conflicts. Your case might be quite unique so best to search for help online.
+
+RocksDB loading
+^^^^^^^^^^^^^^^
 
 If application crashes saying that rocksdb-sharp / rocksdb is failing then most likely your processor is not supporting AVX instructions. Go to the EthereumRunner.cs file and replace:
 
@@ -107,3 +113,11 @@ with
 ::
 
 _dbProvider = new MemDbProvider();
+
+Debug / Release
+^^^^^^^^^^^^^^^
+
+It may happen that something goes wrong and you end up with a message like:
+The application to execute does not exist: '/nethermind/src/Nethermind/Nethermind.Runner/bin/Debug/netcoreapp2.2/Nethermind.Runner.dll'
+
+It is worth to note that .NET Core has to types of outputs - Debug and Release. Release builds are prepared with the -c Release switch. Make sure that you both build and run with -c Release.
