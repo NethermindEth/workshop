@@ -43,12 +43,12 @@ Experiment with `Ether VM Decompiler <https://ethervm.io/decompile>`_.
 ::
 
     cd src/Nethermind/Nethermind.Runner
-    dotnet run --no-build -- --config spaceneth
+    dotnet run -c Release --no-build -- --config spaceneth
     
 ::
 
     cd src/Nethermind/Nethermind.EvmPlayground
-    dotnet run --no-build
+    dotnet run -c Release --no-build
     
 8. Write a simple code in EvmPlayground that will execute '2 + 2'
 
