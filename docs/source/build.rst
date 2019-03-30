@@ -40,7 +40,7 @@ All Platforms
 
 ::
 
-    git clone https://github.com/tkstanczak/nethermind nethworkshop --recursive -b workshop
+    git clone https://github.com/nethermindeth/nethermind nethworkshop --recursive -b workshop
     cd nethworkshop/src/Nethermind
     dotnet build Nethermind.sln -c Release
     
