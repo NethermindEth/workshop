@@ -76,7 +76,7 @@ Experiment with `Ether VM Decompiler <https://ethervm.io/decompile>`_.
 12. (b) Load code that was deployed in '12)' into memory from a separate transaction. The code address is shown in the 'contractAddress' field of the '12)' transaction trace in EvmPlayground. Use EXTCODECOPY, EXTCODESIZE.
 
 13. Analyze opcodes SSTORE, SLOAD and write bytecode that will:
- * permanently store information that address 0x00010203040506070809000a0b0c0d0e0f00010203 has 1 Ether
+ * permanently store information that address 0x000102030405060708090a0b0c0d0e0f00010203 has 1 Ether
  
 14. Each EvmPlayground call is in fact sending an Init type transaction to spaceneth which in turn deploys a contract with bytecode equal to the EvmPlayground call return value (like the one in '12)'). Write bytecode that will
  * deploy code from '8)' 
