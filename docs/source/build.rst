@@ -29,6 +29,14 @@ MacOS
 
     brew install gmp
     brew install snappy
+
+Note: MacOS users may encounter an error when starting the node claiming that "rocksdb is not found". A quick fix for this is running the command below (IMPORTANT: This is a quick fix that **should not be used** other than for testing and education purposes.
+
+::
+
+    brew install rocksdb
+    
+This will install the latest version of rocksdb externally from Nethermind.
     
 Windows
 +++++++
