@@ -43,6 +43,35 @@ Windows
 
 you may need to install https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads
 
+Docker
++++++++
+
+**Disclaimer: Only follow the docker steps if you have used docker before or proceed at your own risk. There will be limited support for the docker flow in the workshops so you will be expected to get this working on your own.**
+
+First Clone the repository as shown in the `All Platforms` Section:
+
+::
+
+    git clone https://github.com/nethermindeth/nethermind nethworkshop --recursive -b workshop
+
+Next go into the directory and Build the docker image (the build step may take a while as it will download an image and build the nethermind from source):
+
+::
+    cd nethworkshop
+    docker build  -t nethermind  --file Dockerfile_workshop .
+
+Finally, you can run a docker container from the image above using the following command:
+
+::
+    docker run -d -t --name spaceneth nethermind
+
+Now you can attach a shell to this container using this command:
+
+::
+    docker exec -it spaceneth /bin/bash 
+
+Now you may proceed to the "All Platforms" section below. Note that every time you start a new terminal window you need to attach to the container shell using the command above. So you can proceed to the section below but skip the first paragraph as this has already been performed here.
+
 All Platforms
 +++++++++++++
 
